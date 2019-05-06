@@ -23,8 +23,6 @@ def input_to_index(input)
   input = input - 1
 end
 
-input = gets.strip
-index = input_to_index(input)
 
 def turn(board)
   puts "Please enter 1-9:"
