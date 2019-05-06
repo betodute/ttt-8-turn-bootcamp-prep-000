@@ -20,7 +20,7 @@ end
 
 def input_to_index(input)
   input = input.to_i
-  input = input - 1
+  input -= 1
   return input
 end
 
@@ -28,7 +28,8 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
-  input_to_index(input)
+  input = input.to_i
+  input -= 1
   index = input
   if valid_move?(board, index)
     move(board, input, value = "X")
